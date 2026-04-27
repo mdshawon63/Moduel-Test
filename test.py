@@ -4,7 +4,6 @@ import os
 TASKS_FILE = "tasks.json"
 
 def load_tasks():
-    """Load tasks from file"""
     if os.path.exists(TASKS_FILE):
         with open(TASKS_FILE, 'r') as file:
             return json.load(file)
